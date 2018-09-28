@@ -1,4 +1,4 @@
-package com.onionm.econsult_en
+package com.onionm.econsultEn
 
 import org.junit.Test
 

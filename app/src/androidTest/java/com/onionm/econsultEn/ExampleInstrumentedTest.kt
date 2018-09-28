@@ -1,4 +1,4 @@
-package com.onionm.econsult_en
+package com.onionm.econsultEn
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.onionm.econsult_en", appContext.packageName)
+        assertEquals("com.onionm.econsultEn", appContext.packageName)
     }
 }

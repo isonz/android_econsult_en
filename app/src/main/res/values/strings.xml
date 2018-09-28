@@ -1,6 +1,33 @@
 <resources>
-    <string name="app_name">eConsult_en</string>
+    <string name="app_name">eConsult</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="image">IMAGE</string>
+
+    <string name="login_slogan1">Your Online Private Doctor</string>
+    <string name="login_logo">LOGO</string>
+
+    <string name="login_by_username_username_hit">USERNAME</string>
+    <string name="login_by_username_password_hit">PASSWORD</string>
+    <string name="login_by_username_submit">LOGIN</string>
+    <string name="login_by_username_register">Sign up a new account >></string>
+
+    <string name="main_icon_1_title">Birth Guidelines</string>
+    <string name="main_icon_2_title">Clinical Trials</string>
+    <string name="main_icon_3_title">Anti-aging Medicine</string>
+    <string name="main_icon_4_title">Preventive medicine</string>
+    <string name="main_icon_5_title">Major diseases/\n complicated diagnosis\n and treatment</string>
+
+
+    <string name="menu_share">Share</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_search">Search</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_message">MESSAGE</string>
+    <string name="nav_my">MY</string>
+
+
 </resources>
