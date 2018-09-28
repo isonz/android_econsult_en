@@ -12,7 +12,7 @@ class AntiAgingMedicineActivity : AppCompatActivity()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_anti_aging)
 
 //        submit_login.setOnClickListener {
 //            startActivity(Intent(LoginActivity@this, MainActivity::class.java))

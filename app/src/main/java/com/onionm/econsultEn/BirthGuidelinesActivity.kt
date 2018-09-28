@@ -12,7 +12,7 @@ class BirthGuidelinesActivity : AppCompatActivity()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_birth_guide)
 
 //        submit_login.setOnClickListener {
 //            startActivity(Intent(LoginActivity@this, MainActivity::class.java))
