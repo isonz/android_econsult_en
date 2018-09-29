@@ -6,29 +6,19 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
 import com.safframework.log.L
-import kotlinx.android.synthetic.main.activity_birth_guide.*
+import kotlinx.android.synthetic.main.activity_birth_guide_info.*
 
 @Suppress("REDUNDANT_LABEL_WARNING")
-class BirthGuidelinesActivity : AppCompatActivity()
+class BirthGuidelinesInfoActivity : AppCompatActivity()
 {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_birth_guide)
+        setContentView(R.layout.activity_birth_guide_info)
 
-        item1.setOnClickListener {
-            startActivity(Intent(BirthGuidelinesActivity@this, BirthGuidelinesInfoActivity::class.java))
+        button1.setOnClickListener {
+            startActivity(Intent(BirthGuidelinesInfoActivity@this, ChatActivity::class.java))
         }
-        item2.setOnClickListener {
-            startActivity(Intent(BirthGuidelinesActivity@this, BirthGuidelinesInfoActivity::class.java))
-        }
-        item3.setOnClickListener {
-            startActivity(Intent(BirthGuidelinesActivity@this, BirthGuidelinesInfoActivity::class.java))
-        }
-        item4.setOnClickListener {
-            startActivity(Intent(BirthGuidelinesActivity@this, BirthGuidelinesInfoActivity::class.java))
-        }
-
     }
 
 

@@ -14,9 +14,15 @@ class AntiAgingMedicineActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anti_aging)
 
-//        submit_login.setOnClickListener {
-//            startActivity(Intent(LoginActivity@this, MainActivity::class.java))
-//        }
+        item1.setOnClickListener {
+            startActivity(Intent(AntiAgingMedicineActivity@this, AntiAgingMedicineSearchActivity::class.java))
+        }
+        item2.setOnClickListener {
+            startActivity(Intent(AntiAgingMedicineActivity@this, AntiAgingMedicineSearchActivity::class.java))
+        }
+        item3.setOnClickListener {
+            startActivity(Intent(AntiAgingMedicineActivity@this, AntiAgingMedicineSearchActivity::class.java))
+        }
 
     }
 

@@ -1,0 +1,308 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="80dp">
+
+
+            <LinearLayout
+                android:id="@+id/inquiry_selected_doctor_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#666666"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/image"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/tmp_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:text="Doctor ABC"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/inquiry_selected_doctor_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:gravity="top"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_selected_doctor_layout_1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="Hello doctor ABC"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/tmp_2" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/inquiry_selected_doctor_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:gravity="top"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_selected_doctor_layout_2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/image"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/tmp_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="......... ......... ........ "
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/inquiry_selected_doctor_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:gravity="top"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_selected_doctor_layout_3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="....... ....... ......."
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/tmp_2" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/inquiry_selected_doctor_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:gravity="top"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_selected_doctor_layout_4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="54dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/image"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/tmp_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text=".......... ..... ....... ....."
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/inquiry_selected_doctor_layout_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:gravity="top"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_selected_doctor_layout_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="........ ........ ....."
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/tmp_2" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inquiry_word_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:gravity="top"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_selected_doctor_layout_6">
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/inquiry_selected_doctor_word_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints"
+        android:padding="5dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/svg_voice_"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/inquiry_selected_doctor_word_input"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:layout_weight="5"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/svg_emoji_"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/svg_add"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

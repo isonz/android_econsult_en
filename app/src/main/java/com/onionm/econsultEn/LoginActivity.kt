@@ -1,8 +1,12 @@
 package com.onionm.econsultEn
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.Window
+import android.view.WindowManager
 import com.safframework.log.L
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -10,8 +14,17 @@ import kotlinx.android.synthetic.main.activity_login.*
 class LoginActivity : AppCompatActivity()
 {
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
+        //透明系统状态栏
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION)
+        }
+
         setContentView(R.layout.activity_login)
 
         submit_login.setOnClickListener {

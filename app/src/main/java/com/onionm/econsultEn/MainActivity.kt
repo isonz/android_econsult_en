@@ -15,9 +15,6 @@ class MainActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-//            R.id.nav_home -> {
-//                startActivity(Intent(InquiryActivity@this, MainActivity::class.java))
-//            }
             R.id.nav_home -> {
                 nav_home.visibility = View.VISIBLE
                 nav_message.visibility = View.GONE
@@ -28,14 +25,12 @@ class MainActivity : AppCompatActivity() {
                 nav_home.visibility = View.GONE
                 nav_message.visibility = View.VISIBLE
                 nav_my.visibility = View.GONE
-
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_my -> {
                 nav_home.visibility = View.GONE
                 nav_message.visibility = View.GONE
                 nav_my.visibility = View.VISIBLE
-
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -47,23 +42,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         navigation_bottom.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        // navigation_bottom.menu.getItem(0).isChecked = true
 
         icon_1.setOnClickListener{
             startActivity(Intent(MainActivity@this, BirthGuidelinesActivity::class.java))
         }
-//        icon_2.setOnClickListener{
-//            startActivity(Intent(MainActivity@this, MedicalRecordListActivity::class.java))
-//        }
         icon_3.setOnClickListener{
             startActivity(Intent(MainActivity@this, AntiAgingMedicineActivity::class.java))
         }
-//        icon_4.setOnClickListener{
-//            startActivity(Intent(MainActivity@this, DiscoveryDoctorLiveActivity::class.java))
-//        }
-//        icon_5.setOnClickListener{
-//            startActivity(Intent(MainActivity@this, DiscoveryDoctorLiveActivity::class.java))
-//        }
+
     }
 
 

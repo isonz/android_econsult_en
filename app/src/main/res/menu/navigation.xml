@@ -10,7 +10,7 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/svg_inquiry"
+        android:icon="@drawable/nav_home"
         android:title="@string/nav_home"
         android:checked="true"/>
 

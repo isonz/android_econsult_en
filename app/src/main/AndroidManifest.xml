@@ -29,16 +29,42 @@
         <activity
             android:name=".BirthGuidelinesActivity"
             android:label="Birth Guidelines"
+            android:parentActivityName=".MainActivity"
             android:launchMode="singleTop">
         </activity>
+        <activity
+            android:name=".BirthGuidelinesInfoActivity"
+            android:label="Non-invasive prenatal DNA testing(NIPT)"
+            android:parentActivityName=".BirthGuidelinesActivity"
+            android:launchMode="singleTop">
+        </activity>
+
 
         <activity
             android:name=".AntiAgingMedicineActivity"
             android:label="Anti-aging Medicine"
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".AntiAgingMedicineSearchActivity"
+            android:label="Comprehensive anti-aging treatment"
+            android:parentActivityName=".AntiAgingMedicineActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".AntiAgingMedicineInfoActivity"
+            android:label="Comprehensive anti-aging treatment"
+            android:parentActivityName=".AntiAgingMedicineSearchActivity"
             android:launchMode="singleTop">
         </activity>
 
-
+        <activity
+            android:name=".ChatActivity"
+            android:label="Doctor ABC"
+            android:parentActivityName=".BirthGuidelinesInfoActivity"
+            android:launchMode="singleTop">
+        </activity>
 
     </application>
 

@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="20dp"
-            android:paddingTop="20dp"
+            android:paddingTop="30dp"
             android:paddingStart="30dp"
             android:paddingEnd="30dp"
             android:orientation="vertical">
@@ -26,20 +26,21 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pre-birth gene test"
-                android:textColor="@color/white"
+                android:text="Non-invasive prenatal DNA testing(NIPT)"
+                android:textColor="@color/yellow"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginBottom="20dp"/>
+
+            <include layout="@layout/line" />
 
             <TextView
                 android:id="@+id/item1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Non-invasive prenatal DNA testing(NIPT)"
-                android:textColor="@color/yellow"
+                android:text="Test introduction"
+                android:textColor="@color/white"
                 android:textSize="16sp"
-                android:drawableStart="@drawable/svg_round_orange"
                 android:drawablePadding="10dp"
                 android:layout_marginBottom="20dp"/>
 
@@ -47,10 +48,9 @@
                 android:id="@+id/item2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thalassemia gene detection"
+                android:text="Detection advantage"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:drawableStart="@drawable/svg_round_white"
                 android:drawablePadding="10dp"
                 android:layout_marginBottom="20dp"/>
 
@@ -58,50 +58,36 @@
                 android:id="@+id/item3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Neonatal genetic metabolic disease screening"
+                android:text="Testing process"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:drawableStart="@drawable/svg_round_white"
                 android:drawablePadding="10dp"
-                android:layout_marginBottom="20dp"/>
-
-
-            <include layout="@layout/line" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="IVF Genetic Screening"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="18sp"
                 android:layout_marginBottom="20dp"/>
 
             <TextView
                 android:id="@+id/item4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Preimplantation genetic screening"
+                android:text="For people"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:drawableStart="@drawable/svg_round_white"
                 android:drawablePadding="10dp"
                 android:layout_marginBottom="20dp"/>
 
+
             <include layout="@layout/line" />
 
-            <TextView
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/zButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="High Risk Pregnant Woman Guide"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_marginBottom="20dp"/>
-
-            <include layout="@layout/line" />
-
+                android:layout_height="35dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="Inquire Now" />
 
         </LinearLayout>
 
