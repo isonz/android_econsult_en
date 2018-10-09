@@ -17,7 +17,6 @@
         tools:layout_editor_absoluteY="8dp">
 
         <LinearLayout
-            android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="20dp"
@@ -28,7 +27,7 @@
                 android:id="@+id/logo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="50dp"
                 android:contentDescription="@string/login_logo"
                 app:srcCompat="@drawable/login_logo"
                 android:layout_gravity="center_horizontal"/>

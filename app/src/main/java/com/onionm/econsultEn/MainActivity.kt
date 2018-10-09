@@ -46,8 +46,14 @@ class MainActivity : AppCompatActivity() {
         icon_1.setOnClickListener{
             startActivity(Intent(MainActivity@this, BirthGuidelinesActivity::class.java))
         }
+        icon_2.setOnClickListener{
+            startActivity(Intent(MainActivity@this, ClinicalTrialsActivity::class.java))
+        }
         icon_3.setOnClickListener{
             startActivity(Intent(MainActivity@this, AntiAgingMedicineActivity::class.java))
+        }
+        icon_4.setOnClickListener{
+            startActivity(Intent(MainActivity@this, PreventiveMedicineActivity::class.java))
         }
 
     }

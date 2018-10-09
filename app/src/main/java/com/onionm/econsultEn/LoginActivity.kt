@@ -31,6 +31,9 @@ class LoginActivity : AppCompatActivity()
             startActivity(Intent(LoginActivity@this, MainActivity::class.java))
         }
 
+        sign_up.setOnClickListener {
+            startActivity(Intent(LoginActivity@this, RegisterActivity::class.java))
+        }
     }
 
     // 包裹范围内 属于静态方法
