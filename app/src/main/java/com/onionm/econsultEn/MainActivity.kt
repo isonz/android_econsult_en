@@ -15,19 +15,19 @@ class MainActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.nav_home -> {
+            R.id.navigation_home -> {
                 nav_home.visibility = View.VISIBLE
                 nav_message.visibility = View.GONE
                 nav_my.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.nav_message -> {
+            R.id.navigation_message -> {
                 nav_home.visibility = View.GONE
                 nav_message.visibility = View.VISIBLE
                 nav_my.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.nav_my -> {
+            R.id.navigation_my -> {
                 nav_home.visibility = View.GONE
                 nav_message.visibility = View.GONE
                 nav_my.visibility = View.VISIBLE
@@ -54,6 +54,9 @@ class MainActivity : AppCompatActivity() {
         }
         icon_4.setOnClickListener{
             startActivity(Intent(MainActivity@this, PreventiveMedicineActivity::class.java))
+        }
+        icon_5.setOnClickListener{
+            startActivity(Intent(MainActivity@this, MajorDiseasesActivity::class.java))
         }
 
     }

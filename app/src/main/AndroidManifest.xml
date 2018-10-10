@@ -121,6 +121,50 @@
             android:hardwareAccelerated="false"
             android:launchMode="singleTop">
         </activity>
+        <activity
+            android:name=".ClinicalTrialsSignUpActivity"
+            android:label="Clinical Trials"
+            android:parentActivityName=".ClinicalTrialsInfoActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".ClinicalTrialsSignUpFinishActivity"
+            android:label="Clinical Trials"
+            android:parentActivityName=".ClinicalTrialsSignUpActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
+
+
+        <activity
+            android:name=".MajorDiseasesActivity"
+            android:label="Major diseases complicated diagnosis and treatment"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".MajorDiseasesSearchActivity"
+            android:label="By Disease"
+            android:parentActivityName=".MajorDiseasesActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".MajorDiseasesSearchListActivity"
+            android:label="Search list"
+            android:parentActivityName=".MajorDiseasesSearchActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".MajorDiseasesHospitalInfoActivity"
+            android:label="Search list"
+            android:parentActivityName=".MajorDiseasesSearchListActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
 
 
 
