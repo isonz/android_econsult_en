@@ -160,7 +160,7 @@
         </activity>
         <activity
             android:name=".MajorDiseasesHospitalInfoActivity"
-            android:label="Search list"
+            android:label="Info"
             android:parentActivityName=".MajorDiseasesSearchListActivity"
             android:hardwareAccelerated="false"
             android:launchMode="singleTop">
