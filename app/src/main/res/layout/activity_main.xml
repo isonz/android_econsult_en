@@ -187,11 +187,77 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/button_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/tmp_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textColor="@color/white"
+                    android:text="NAME：ZHANG SAN\nGENDER：MALE" />
+            </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Under construction"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal information"
+                android:textColor="@color/gray3"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultation history"
+                android:textColor="@color/gray3"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My consultation progress"
+                android:textColor="@color/gray3"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+            <include layout="@layout/line" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="@color/gray3"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help and support"
+                android:textColor="@color/gray3"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"/>
+            <include layout="@layout/line" />
+
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

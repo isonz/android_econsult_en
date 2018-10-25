@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.onionm.econsultEn">
 
     <application
@@ -8,7 +9,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor"
+        tools:ignore="GoogleAppIndexingWarning">
 
         <activity
             android:name=".LoginActivity"
@@ -54,7 +57,7 @@
         </activity>
         <activity
             android:name=".AntiAgingMedicineInfoActivity"
-            android:label="Comprehensive anti-aging treatment"
+            android:label="La Source"
             android:parentActivityName=".AntiAgingMedicineSearchActivity"
             android:launchMode="singleTop">
         </activity>
@@ -95,13 +98,13 @@
         </activity>
         <activity
             android:name=".PreventiveMedicineSearchActivity"
-            android:label="Preventive Medicine"
+            android:label="Comprehensive check-up programme"
             android:parentActivityName=".PreventiveMedicineActivity"
             android:launchMode="singleTop">
         </activity>
         <activity
             android:name=".PreventiveMedicineInfoActivity"
-            android:label="Preventive Medicine"
+            android:label="Clinique de Genolier"
             android:parentActivityName=".PreventiveMedicineActivity"
             android:launchMode="singleTop">
         </activity>
@@ -148,6 +151,20 @@
             android:name=".MajorDiseasesSearchActivity"
             android:label="By Disease"
             android:parentActivityName=".MajorDiseasesActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".MajorByMedicineNameSearchActivity"
+            android:label="By Medicine Name"
+            android:parentActivityName=".MajorDiseasesActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".MajorByMedicineNameInfoActivity"
+            android:label="Axitinib"
+            android:parentActivityName=".MajorByMedicineNameSearchActivity"
             android:hardwareAccelerated="false"
             android:launchMode="singleTop">
         </activity>
